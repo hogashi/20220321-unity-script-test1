@@ -6,14 +6,14 @@ public class AzumaTest1 : MonoBehaviour
 {
   // Start is called before the first frame update
   public string myName;
-  public GameObject targetCube;
+  public Transform targetTransform;
 
   void Start()
   {
     BoxCollider boxCollider = GetComponent<BoxCollider>();
     Debug.Log("I am alive! size: " + boxCollider.size);
 
-    Debug.Log("target position: " + targetCube.transform.position);
+    Debug.Log("target position: " + targetTransform.position);
   }
 
   // Update is called once per frame
